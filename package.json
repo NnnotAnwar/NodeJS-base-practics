@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-base-practics",
+  "version": "1.0.0",
+  "description": "nodejs base practics",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NnnotAnwar/NodeJS-base-practics.git"
+  },
+  "keywords": [
+    "nodejs",
+    "base"
+  ],
+  "author": "Anwar <anuarkairulla@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NnnotAnwar/NodeJS-base-practics/issues"
+  },
+  "homepage": "https://github.com/NnnotAnwar/NodeJS-base-practics#readme"
+}

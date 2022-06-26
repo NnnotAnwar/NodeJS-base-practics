@@ -1,0 +1,1 @@
+exports.myModuleVal = 'myCustomModuleTwo.js'
