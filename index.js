@@ -138,3 +138,24 @@ os.homedir() // string, 'C:/Users/*Username*'
 os.hostname() // string, computer name
 os.userInfo() // Object, user information
 
+// EventEmitter
+
+const eventCallback = data => console.log(data)
+const eventCallback2 = data => console.log('Once Event:', data)
+
+emitter.on('message', eventCallback) // create event listener on 'message' that can be called 2 more times
+emitter.once('mainMessage', eventCallback2) // create event listener on 'message' that can be called only once
+
+emitter.emit('message', 'Some sort of data') // emited event 'message'
+emitter.emit('message', 'New data') // emited event 'message'
+emitter.emit('message', 'New new data') // emited event 'message'
+
+emitter.emit('mainMessage', 'Data1') // emited event 'mainMessage'
+emitter.emit('mainMessage', 'Data2') // emited event 'mainMessage', doesn't show a message
+emitter.emit('mainMessage', 'Data3') // emited event 'mainMessage', doesn't show a message
+
+emitter.removeListener('message', eventCallback) // remove event listener on 'message'
+
+emitter.emit('message', 'Emit after remove') // no more event listener 'message' exists
+
+
